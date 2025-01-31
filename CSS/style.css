@@ -97,9 +97,8 @@ li {
 }
 
 /* Link Box */
-
 .link-box {
-    display: block;
+    display: inline-block; /* Make the box adjust to text width */
     background-color: #212b3b; /* Green background */
     color: white; /* Text color */
     padding: 10px 20px; /* Add padding for some space around the text */
@@ -109,10 +108,4 @@ li {
     text-decoration: none; /* Remove underline from link */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Hover effect for the box */
-.link-box:hover {
-    transform: translateY(-5px); /* Make the box slightly move upwards */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add more shadow on hover */
 }
