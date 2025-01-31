@@ -22,11 +22,11 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 60px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 26px;
 }
 
 /* Navigation */
@@ -94,6 +94,7 @@ video {
 li {
     padding: 5px;
     margin-left: 30px;
+    font-size: 18px;
 }
 
 /* Link Box */
@@ -102,10 +103,19 @@ li {
     background-color: #212b3b; /* Green background */
     color: white; /* Text color */
     padding: 10px 20px; /* Add padding for some space around the text */
-    font-size: 15px; /* Text size */
+    font-size: 18px; /* Text size */
     text-align: center;
     border-radius: 8px;
     text-decoration: none; /* Remove underline from link */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Imgage */
+img {
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
 }
