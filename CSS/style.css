@@ -99,7 +99,7 @@ li {
 /* Link Box */
 
 .link-box {
-    display: inline-block; /* Make the box adjust to text width */
+    display: block;
     background-color: #212b3b; /* Green background */
     color: white; /* Text color */
     padding: 10px 20px; /* Add padding for some space around the text */
