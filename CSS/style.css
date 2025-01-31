@@ -95,3 +95,24 @@ li {
     padding: 5px;
     margin-left: 30px;
 }
+
+/* Link Box */
+
+.link-box {
+    display: inline-block; /* Make the box adjust to text width */
+    background-color: #212b3b; /* Green background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add padding for some space around the text */
+    font-size: 15px; /* Text size */
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none; /* Remove underline from link */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for the box */
+.link-box:hover {
+    transform: translateY(-5px); /* Make the box slightly move upwards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add more shadow on hover */
+}
