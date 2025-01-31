@@ -84,3 +84,14 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* Video */
+video {
+    padding: 10px;
+}
+
+/* List */
+li {
+    padding: 5px;
+    margin-left: 30px;
+}
