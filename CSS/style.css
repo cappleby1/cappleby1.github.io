@@ -50,6 +50,7 @@ nav a:hover {
 /* Container */
 .container {
     padding: 20px;
+    text-align: center;
 }
 
 /* Section */
@@ -85,11 +86,6 @@ footer {
     text-align: center;
 }
 
-/* Video */
-video {
-    padding: 10px;
-}
-
 /* List */
 li {
     padding: 5px;
@@ -118,4 +114,8 @@ img {
 
 p {
     font-size: 20px;
+}
+
+iframe{
+    border: #212b3b;
 }
