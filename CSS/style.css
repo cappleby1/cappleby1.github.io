@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -7,7 +9,7 @@
 
 /* Body and global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     background-image:  url('Images/websitebackground.jpg');
     background-repeat: no-repeat;
@@ -17,6 +19,7 @@ body {
 
 /* Header */
 header {
+    font-family: 'Press Start 2P', cursive;
     background-color: #3b73b3;
     color: #fff;
     padding: 40px 0;
@@ -24,12 +27,12 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    font-size: 60px;
+    margin: 10px;
+    font-size: 48px;
 }
 
 header p {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 /* Navigation */
@@ -47,8 +50,9 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: rgb(11, 9, 29);
 }
+
 
 /* Container */
 .container {
@@ -76,7 +80,7 @@ nav a:hover {
 .card h3 {
     text-align: center;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 32px;
     font-style: bold;
 }
 
@@ -86,10 +90,11 @@ nav a:hover {
 }
 .card p{
     text-align: center;
+    font-size: 18px;
 }
 .card li {
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
 }
 .card iframe {
     border: 5px solid #0d324b;
@@ -103,9 +108,10 @@ nav a:hover {
 }
 
 .card h4 {
+    display: inline-block;
     font-size: 20px;
-    padding: 5px;
-    text-decoration: underline;
+    border-bottom: 2px dotted white;
+    margin-bottom: 10px;
 }
 
 /* Footer */
