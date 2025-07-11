@@ -12,7 +12,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     background-image:  url('Images/websitebackground.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
 }
@@ -21,8 +21,8 @@ body {
 header {
     font-family: 'Press Start 2P', cursive;
     background-color: #1e436d;
-    color: #fff;
-    padding: 40px 0;
+    color: #ffffff;
+    padding: 10px 1px;
     text-align: center;
 }
 
@@ -53,7 +53,6 @@ nav a:hover {
     color: rgb(11, 9, 29);
 }
 
-
 /* Container */
 .container {
     padding: 20px;
@@ -75,7 +74,6 @@ nav a:hover {
     width: 80%;   
     border-radius: 8px; 
 }
-
 
 .card h3 {
     text-align: center;
@@ -145,7 +143,6 @@ li {
 }
 
 /* Imgage */
-
 p {
     font-size: 16px;
 }
@@ -163,4 +160,128 @@ hr.dotted-line {
 
 #about {
     text-align: center;  
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e436d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px; /* Add some spacing between the links */
+}
+
+footer a:hover {
+    color: rgb(11, 9, 29);
+}
+
+/* Footer Content */
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer .social-media {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+/* Mobile-friendly Section */
+@media only screen and (max-width: 768px) {
+    /* Header */
+    header h1 {
+        font-size: 20px; 
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 100%; /* Use full width */
+    }
+
+    .nav-links li {
+        margin: 0 10px; /* Adjust the spacing between links */
+    }
+
+    /* Cards */
+    .card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p,
+    .card li {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+    }
+
+    /* Link Box */
+    .link-box {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    /* Bottom section for mobile-friendly design */
+    .bottom-section {
+        background-color: #1e436d;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .bottom-section h2 {
+        font-size: 16px;
+    }
+
+    .bottom-section p {
+        font-size: 16px;
+    }
+
+    /* Adjust image size */
+    .card img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* About section */
+    #about {
+        font-size: 16px;
+    }
+
+    .card iframe {
+        width: 100%; 
+        height: auto; 
+        max-width: 100%; 
+        border-radius: 8px; 
+        margin: 10px 0;
+    }
 }
