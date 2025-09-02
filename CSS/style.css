@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,221 +9,203 @@
 
 /* Body and global styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    background-image:  url('Images/websitebackground.jpg');
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    background-color: #A9CEF4;
 }
 
 /* Header */
 header {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #1e436d;
-    color: #ffffff;
+    background-color: #283538;
+    color: white;
     padding: 10px 1px;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 10px;
-    font-size: 48px;
+    font-size: 60px;
+    
 }
 
 header p {
-    font-size: 24px;
+    font-size: 28px;
 }
 
-/* Navigation */
-nav {
-    background-color: #316da5;
-    text-align: center;
-    padding: 10px 0;
+header hr.dotted-line {
+  border: none;
+  border-top: 2px dashed white; /* thicker, dashed, darker */
+  margin: 20px auto;           /* centered, more spacing */
+  width: 100%;                  /* shorter than full width */
 }
 
-nav a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: rgb(11, 9, 29);
-}
-
-/* Container */
-.container {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Section */
-.section {
-    margin-bottom: 40px;
-}
 
 /* Card for Projects */
 .card {
-    text-align: center;
-    background-color: #1d66a1;
-    padding: 15px;   
-    margin: 10px auto;   
+    background-color: #36494E;
+    padding: 15px;
+    margin: 20px auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 80%;   
-    border-radius: 8px; 
+    width: 80%;
+    border-radius: 8px;
+    text-align: left;
 }
 
 .card h3 {
     text-align: center;
-    padding-bottom: 10px;
     font-size: 32px;
-    font-style: bold;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
 }
 
-.card h2 {
-    text-align: center;
-    padding-bottom: 10px;
+.card hr.dotted-line {
+    border: none;
+    border-top: 1px dotted #fff;
+    margin: 10px 0;
+    width: 100%;
 }
-.card p{
-    text-align: center;
-    font-size: 18px;
+
+.card-content {
+    display: flex;
+    justify-content: flex-start;
 }
-.card li {
-    text-align: left;
-    font-size: 18px;
+
+/* Media Section (Left side) */
+.card .media {
+    margin-bottom: 15px; /* Space between the image and text */
+    overflow: hidden; /* Ensures the image stays within the border */
+    width: 40%; /* Small width for the media section */
+    margin-right: 20px; /* Space between media and text */
+    display: flex;
+    flex-direction: column; /* Stack videos/images vertically */
+    align-items: center; /* Align media items in the center horizontally */
+    justify-content: center; /* Ensure the content is centered in the media box */
 }
+
+/* Video (iframe) Styling */
 .card iframe {
-    border: 5px solid #0d324b;
-    border-radius: 10px;
-    margin: 20px;
+    width: 100%; /* Full width of the media column */
+    height: 300px; /* Fixed height for videos */
+    margin-bottom: 10px; /* Space between video items */
+    border: 2px solid black; /* Black border */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures border is included in element’s total size */
 }
+
+/* Image Styling with border */
 .card img {
-    border: 5px solid #0d324b;
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    width: auto; /* Let the image size itself naturally */
+    border: 2px solid black;
     border-radius: 10px;
-    margin: 20px;
+    box-sizing: border-box;
+}
+
+
+.card .info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .card h4 {
-    display: inline-block;
     font-size: 20px;
-    border-bottom: 2px dotted white;
+    font-weight: bold;
     margin-bottom: 10px;
+    border-bottom: 2px dotted white;
 }
 
-/* Footer */
-footer {
-    background-color: #3b73b3;
-    color: white;
-    padding: 10px;
-    text-align: center;
+.card ul {
+    padding-left: 20px;
 }
 
-/* List */
-li {
-    padding: 5px;
-    margin-left: 30px;
+.card li {
     font-size: 18px;
+    margin-bottom: 8px;
 }
 
-/* Link Box */
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* GitHub Link Box */
 .link-box {
-    display: inline-block; /* Make the box adjust to text width */
-    background-color: #212b3b; /* Green background */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Add padding for some space around the text */
-    font-size: 18px; /* Text size */
+    margin-top: 20px;
+    display: inline-block;  /* Set to inline-block for shrinking to content width */
+    background-color: #7EA0B7;
+    padding: 6px 12px;  /* Adjust padding for a smaller box */
+    font-size: 14px;     /* Adjust font size */
     text-align: center;
     border-radius: 8px;
-    text-decoration: none; /* Remove underline from link */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
-    float: none;
+    width: fit-content;   /* Ensure the box takes up only the space it needs */
+    margin-left: auto;    /* Auto margin on the left */
+    margin-right: auto;   /* Auto margin on the right */
 }
 
-/* Imgage */
-p {
+/* GitHub Link */
+.link-box a {
+    color: black;
+    text-decoration: none;
     font-size: 16px;
 }
 
-iframe{
-    border: #212b3b;
-}
 
-hr.dotted-line {
-    border: none;
-    border-top: 2px dotted white; /* Creates a dotted line */
-    width: 100%; /* You can adjust the width */
-    padding: 10px;
-}
 
-#about {
-    text-align: center;  
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: #1e436d;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #283538;
+    color: white;
+    padding: 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px; /* Add some spacing between the links */
-}
-
-footer a:hover {
-    color: rgb(11, 9, 29);
-}
-
-/* Footer Content */
-footer .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Responsive Footer */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    footer .social-media {
-        display: block;
-        margin-top: 10px;
+    /* Stack media and text vertically */
+    .card-content {
+        flex-direction: column;
+        text-align: left;
     }
-}
 
-/* Mobile-friendly Section */
-@media only screen and (max-width: 768px) {
-    /* Header */
+    .card .media,
+    .card .info {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .card .media iframe,
+    .card .media img {
+        margin-bottom: 20px;
+    }
+
+    /* Mobile Styles for Header */
     header h1 {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     header p {
         font-size: 14px;
     }
 
-    /* Navigation */
     nav a {
         margin: 0 10px;
         font-size: 14px;
     }
 
-    .nav-links {
-        display: flex;
-        justify-content: space-around;
-        width: 100%; /* Use full width */
-    }
-
-    .nav-links li {
-        margin: 0 10px; /* Adjust the spacing between links */
-    }
-
-    /* Cards */
     .card {
         width: 90%;
         padding: 10px;
@@ -238,18 +220,15 @@ footer .footer-content {
         font-size: 14px;
     }
 
-    /* Footer */
     footer {
         font-size: 14px;
     }
 
-    /* Link Box */
     .link-box {
         font-size: 14px;
         padding: 8px 14px;
     }
 
-    /* Bottom section for mobile-friendly design */
     .bottom-section {
         background-color: #1e436d;
         color: white;
@@ -266,22 +245,16 @@ footer .footer-content {
         font-size: 16px;
     }
 
-    /* Adjust image size */
     .card img {
         width: 100%;
         margin: 10px 0;
     }
 
-    /* About section */
-    #about {
-        font-size: 16px;
-    }
-
     .card iframe {
-        width: 100%; 
-        height: auto; 
-        max-width: 100%; 
-        border-radius: 8px; 
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 8px;
         margin: 10px 0;
     }
 }

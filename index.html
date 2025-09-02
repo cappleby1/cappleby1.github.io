@@ -14,15 +14,6 @@
         <p>Game Engineering Msc Student | Computer Science BSc Graduate</p>
     </header>
 
-    <!-- NAV BAR -->
-    <nav>
-        <a href="index.html">About Me</a>
-        <a href="undergraduate.html">Undergraduate Work</a>
-        <a href="postgraduate.html">Postgraduate Work</a>
-        <a href="extraprojects.html">Additional Projects</a>
-
-    </nav>
-
     <!-- ABOUT SECTION -->
     <div class="container">
         <div class="card">
@@ -31,70 +22,99 @@
                 <hr class="dotted-line">
                 <p>Hi, I'm Catherine! I study Game Engineering at Newcastle University and I'm a passionate Game Engineer. Check my GitHub profile using the link below!</p>
                 <br>
-                <a href="https://github.com/cappleby1" target="_blank" class="link-box">
-                    Github Profile
-                </a>
+                <div class="link-box">
+                    <a href="https://github.com/cappleby1/cappleby1.github.io" target="_blank">Click to visit my Github profile!</a>
+                </div>
                 <br>
             </section>
         </div>
     </div>
-    
-    <!-- UNDERGRAD SECTION -->
-    <div class="card">
-        <h3>Undergraduate Spotlight - Dissertation </h3>
-        <hr class="dotted-line">
-        <iframe width="400px" height="200px"
-        src="https://www.youtube.com/embed/kr1RPKg60vA">
-        </iframe>
-        <iframe width="400px" height="200px"
-        src="https://www.youtube.com/embed/Rq3ddetuxUM">
-        </iframe>
-        <p>For my Undergraduate dissertation, I looked into using video games for physical rehabiliation purposes. This could include for example, patients recoving from surgery or those with life long conditions. The aim of this disseration was to create a video game that would assist with improving a patients fine motor skills. </p>
-        <br></br>
-        <h4>Technologies & skills this project included were:</h4>
-        <ul>   
-            <li>Python (OpenCV) - the python section of this project was used to track the user's hands. This would create the coordinates needed for the unity section of the project.</li>
-            <li>Unity - the unity section of this project is the main section of the software and is what the user would interact with.</li>
-            <li> This project was the first time I looked at using an input that was not keyboard & mouse. That was my main first focus of the project.</li>
-            <li> This was also my first time using python with another language and so a lot of the project was spent understanding how to link the two which led to me using python sockets.</li>
-        </ul>
-        <br></br>
-            <a href="https://github.com/cappleby1/undergraduate_dissertation/tree/main" target="_blank" class="link-box">
-                Click to visit project github page!
-            </a>
-        <br></br>
-    </div>
-    <!-- POST GRAD SECTION -->
-    <div class="card">
-        <h3>Postgraduate Spotlight - Game of Life Coursework</h3>
-        <hr class="dotted-line">
-        <img src="Images/gameoflifegif.gif" alt="Game of life image" width="300px" height="300px">
 
-        <p>For this project I recreated the Conway game of life. Once doing this I created an interface that could be used to check for the apperance of certain standard shapes such as blocks and beehives up to more complex shapes such as ships. This was the first project I worked on in C++.</p>
-        <br></br>
-        <h4>Technologies & skills this project included were:</h4>
-        <ul>   
-            <li> Learnt the core parts of C++ such as header files and how these worked alongside main files. </li>
-            <li> I had not used visual studio for development before this project and so learnt about the IDE and how to best take advantage of the tools it provided such as the debug & breakpoint tools. </li>
-        </ul>
-        <br></br>
-        <a href="https://github.com/cappleby1/CSC8501_Game_of_Life" target="_blank" class="link-box">
-            Click to visit project github page!
-        </a>
-    </div>
+<!-- POSTGRAD SECTION -->
+<div class="card">
+    <h3>Postgraduate Dissertation</h3>
+    <hr class="dotted-line">
 
-    <!-- ADDITIONAL SECTION -->
-    <div class="card">
-        <h3>Additional Projects Spotlight - Godot Project</h3>
-        <hr class="dotted-line">
-        <img src="Images/godot.gif" alt="Godot Gif" width="300px">
-        <img src="Images/godot.png" alt="Godot Image" width="300px">
-        <p>I was interested in other game engines and so I began to work on a Godot project - this project is very early in development and is ongoing.</p>
-        <br></br>
-        <a href="https://github.com/cappleby1/Godot_Game" target="_blank" class="link-box">
-            Click to visit project github page!
-        </a>
+    <!-- Media and Info Sections inside flexbox -->
+    <div class="card-content">
+        <div class="media">
+            <iframe width="400px" height="200px" src="https://www.youtube.com/embed/RGmRGNUNVC8?feature=youtu.be"></iframe>
+        </div>
+        
+        <div class="info">
+            <h4>Project Overview</h4>
+            <p>This is my postgraduate disseration. For this project I created a game in unreal enegine. This is a template of the kind of game that could be created to help research into cognitive bias. I created an escape room game where buttons would have unexpected outputs. The player would be trying to escape the room in the time limit. There are menus and the ability to restart levels as well as a small amount of NPC AI.</p>
+            <div class="link-box">
+                <a href="https://github.com/cappleby1/Postgraduate_Dissertation" target="_blank">Click to visit project GitHub page!</a>
+            </div>
+        </div>
     </div>
+</div>
+
+<!-- UNDERGRAD SECTION -->
+<div class="card">
+    <h3>Undergraduate Dissertation</h3>
+    <hr class="dotted-line">
+
+    <!-- Media and Info Sections inside flexbox -->
+    <div class="card-content">
+        <div class="media">
+            <iframe width="400px" height="200px" src="https://www.youtube.com/embed/kr1RPKg60vA"></iframe>
+            <iframe width="400px" height="200px" src="https://www.youtube.com/embed/Rq3ddetuxUM"></iframe>
+        </div>
+        
+        <div class="info">
+            <h4>Project Overview</h4>
+            <p>This is my undergraduate disseration. For this project I created a hand tracking tool in unity using OpenCV and python sockets. This project was based on research into games for rehabilitation purposes. The tool uses a webcam as an input and allows the player to move the ingame hand using this. They are able to interact with buttons in the game world. When all the buttons have been pressed the level complete screen will display with the users final time.</p>
+            <div class="link-box">
+                <a href="https://github.com/cappleby1/undergraduate_dissertation/tree/main" target="_blank">Click to visit project GitHub page!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GODOT SECTION -->
+<div class="card">
+    <h3>Godot Project</h3>
+    <hr class="dotted-line">
+
+    <!-- Media and Info Sections inside flexbox -->
+    <div class="card-content">
+        <div class="media">
+            <img src="Images/godot.gif" alt="Godot Gif">
+        </div>
+        
+        <div class="info">
+            <h4>Project Overview</h4>
+            <p>This is a small godot project I began to start looking into godot development. It is a basic platformer based on the the brackey's godot development video. This project was to let me look at development in other engines, I wanted to look at godot as it uses its own version of typescript for coding.</p>
+            <div class="link-box">
+                <a href="https://github.com/cappleby1/Godot_Game" target="_blank">Click to visit project GitHub page!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- XR SECTION -->
+<div class="card">
+    <h3>XR Unity Project</h3>
+    <hr class="dotted-line">
+
+    <!-- Media and Info Sections inside flexbox -->
+    <div class="card-content">
+        <div class="media">
+            <img src="Images/XRMobileApp.gif" alt="XR Gif">
+        </div>
+        
+        <div class="info">
+            <h4>Project Overview</h4>
+            <p>This is a XR unity project I took up. The user will scan a QR code on their phone using the device camera which will spawn a cube. This cube can be interacted with using the buttons on screen.</p>
+            <div class="link-box">
+                <a href="https://github.com/cappleby1/Godot_Game" target="_blank">Click to visit project GitHub page!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <footer>
         <p>&copy; 2025 Catherine Appleby. All Rights Reserved.</p>
