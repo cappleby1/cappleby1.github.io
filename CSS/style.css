@@ -6,6 +6,14 @@ body {
 
 h1{
     font-size: 50px;
+    margin: 5px;
+}
+
+hr.dotted-line{
+    border: none;
+    border-top: 5px dotted black;
+    margin: 5px 0;
+    width: 100%;
 }
 
 .image-link {
