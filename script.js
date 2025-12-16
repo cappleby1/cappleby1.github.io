@@ -1,3 +1,4 @@
+// Function to upate time
 function updateDateTime() {
   const now = new Date();
 
@@ -13,7 +14,7 @@ function updateDateTime() {
   }
 }
 
-
+// Actually updates time continually & includes menu stuff
 document.addEventListener('DOMContentLoaded', () => {
   updateDateTime();
   setInterval(updateDateTime, 1000);
@@ -30,11 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
+// Used to set confetti default
 let isFalling = false;
 let interval;
 
-
+// Random colour function for confetti
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -45,6 +46,7 @@ function getRandomColor() {
 }
 
 
+// Creates the random circle sizes for confetti
 function createCircle() {
     const circle = document.createElement('div');
     circle.classList.add('circle');
@@ -64,17 +66,19 @@ function createCircle() {
 }
 
 
+// Used to make the confetti start falling
 function startFallingCircles() {
     interval = setInterval(createCircle, 200); 
     isFalling = true;
 }
 
-
+// Used to stop confetti falling
 function stopFallingCircles() {
     clearInterval(interval); 
     isFalling = false;
 }
 
+// Used for the toggle confetti button
 document.getElementById('toggle-button').addEventListener('click', function() {
     if (isFalling) {
         stopFallingCircles();
