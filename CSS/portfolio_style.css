@@ -163,7 +163,7 @@ header hr.dotted-line {
     font-size: 16px;
 }
 
-.read-more {
+.info .read-more {
     font-family: 'Source Code Pro', monospace;
     display: block;           
     width: fit-content;       
