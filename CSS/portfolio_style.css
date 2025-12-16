@@ -40,6 +40,10 @@ header hr.dotted-line {
   width: 100%;                  /* shorter than full width */
 }
 
+#about {
+    text-align: center;
+}
+
 
 /* Card for Projects */
 .card {
@@ -111,7 +115,9 @@ header hr.dotted-line {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 10px; /* Optional spacing between elements */
 }
+
 
 .card h4 {
     font-size: 20px;
@@ -137,19 +143,17 @@ header hr.dotted-line {
 
 /* GitHub Link Box */
 .link-box {
-    margin-top: 20px;
-    display: inline-block;  /* Set to inline-block for shrinking to content width */
-    background-color: #7EA0B7;
-    padding: 6px 12px;  /* Adjust padding for a smaller box */
-    font-size: 14px;     /* Adjust font size */
+    display: block;           
+    width: fit-content;       
+    margin: 20px auto 0 auto; 
     text-align: center;
+    background-color: #7EA0B7;
+    padding: 6px 12px;
+    font-size: 14px;
     border-radius: 8px;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
-    width: fit-content;   /* Ensure the box takes up only the space it needs */
-    margin-left: auto;    /* Auto margin on the left */
-    margin-right: auto;   /* Auto margin on the right */
 }
 
 /* GitHub Link */
@@ -157,6 +161,21 @@ header hr.dotted-line {
     color: black;
     text-decoration: none;
     font-size: 16px;
+}
+
+.read-more {
+    font-family: 'Source Code Pro', monospace;
+    display: block;           
+    width: fit-content;       
+    margin: 20px auto 0 auto; 
+    text-align: center;
+    background-color: #7EA0B7;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 
