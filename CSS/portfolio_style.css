@@ -209,21 +209,44 @@ form {
     text-align: center;
 }
 
+form input,
+form textarea {
+    width: 30%;
+    padding: 8px 10px;
+    margin: 6px 0 16px 0;
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+
+    background-color: #f5f5f5;
+    color: #000;
+
+    border: 2px solid #7EA0B7;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
 .card form button {
     appearance: none;
     -webkit-appearance: none;
-    font-family: 'Source Code Pro', monospace;
-    background-color: #7EA0B7;
-    padding: 6px 12px;
-    font-size: 14px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-}
 
-form textarea {
-    resize: both;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+
+    background-color: #7EA0B7;
+    color: #000;
+
+    padding: 8px 16px;
+    margin-top: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
