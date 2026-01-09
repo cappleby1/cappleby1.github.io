@@ -209,8 +209,8 @@ form {
     text-align: center;
 }
 
-form input,
-form textarea {
+.card form input,
+.card form textarea {
     width: 30%;
     padding: 8px 10px;
     margin: 6px 0 16px 0;
