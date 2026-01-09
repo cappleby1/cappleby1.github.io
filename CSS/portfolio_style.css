@@ -205,12 +205,12 @@ footer a{
     color: white;
 }
 
-form{
+.card form{
     text-align: center;
     padding: auto;
 }
 
-form button{
+.card form button{
     font-family: 'Source Code Pro', monospace;     
     text-align: center;
     background-color: #7EA0B7;
@@ -222,7 +222,7 @@ form button{
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-form textarea{
+.card form textarea{
     resize: both;
 }
 
