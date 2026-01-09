@@ -50,3 +50,26 @@ body{
   text-decoration: none;
   color: inherit; 
 }
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img{
+  width: 30px;
+  height: auto;
+  padding-left: 10px;
+  text-align: left;
+}
+
+footer p{
+  text-align: right;
+  padding-right: 10px;
+}
