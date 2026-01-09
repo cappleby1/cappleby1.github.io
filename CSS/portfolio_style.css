@@ -205,26 +205,26 @@ footer a{
     color: white;
 }
 
-.card form{
+form {
     text-align: center;
-    padding: auto;
 }
 
-.card form button{
-    font-family: 'Source Code Pro', monospace;     
-    text-align: center;
+.card form button {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: 'Source Code Pro', monospace;
     background-color: #7EA0B7;
     padding: 6px 12px;
     font-size: 14px;
     border-radius: 8px;
-    text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card form textarea{
+form textarea {
     resize: both;
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
