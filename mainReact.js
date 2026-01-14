@@ -32,8 +32,8 @@ const projects = [
   },
   {
     id: "undergrad-react",
-    title: "Undergraduate Dissertation",
-    shortDesc: "This project was to create a more interactive way for the user to complete physiotherapy. The project was created in unity and used OpenCV with python sockets.",
+    title: "Hand Tracking Project - Based on Undergraduate Dissertation",
+    shortDesc: "This project was to create a more interactive way for the user to complete physiotherapy. The project was created in unity and used OpenCV with python sockets. This has since been updated and I am currently improving this project and expanding on what I did for my dissertation. Such as it can now track and move both hands (or only 1 if only 1 is detcted)",
     longDesc: "By using only a webcam the user could use their hand to move an in-game hand that could interact with the game world. This would include things such as activating buttons. The game would record the player's time so that they were able to track progress for their rehabilitation. With more time more features such as accuracy tracking would have been added or different ways of interacting with objects in the world. This would could be increased scope wise to a near full game project.",
     githubLink: "https://github.com/cappleby1/undergraduate_dissertation/tree/main"
   },
