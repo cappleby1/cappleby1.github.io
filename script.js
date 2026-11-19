@@ -12,7 +12,8 @@ const projects = [
     color: 'c-sky', w: 'w1', h: 'h1', isNew: true,
     tags: ['Focus timer', 'FastAPI', 'SQLite', 'JavaScript'],
     desc: 'A cosy focus timer where every session is a train trip. Pick somewhere to go and the ride takes about as long as the real train would, while you sit in the carriage with a cup of tea and Pip the cat conductor and watch the countryside go by. Earn miles, tickets and souvenirs, and spend them doing up your engine.',
-    // Phase 2: add media, primary: 'Open Little Line', primaryHref: 'little-line/'. The repo is private, so no repo link.
+    media: { type: 'image', src: 'Images/little-line.jpg', alt: 'Little Line: a cosy train carriage with Pip the cat conductor, a lamp and a cup of tea, waiting at London' },
+    // Once Lite is live: primary: 'Open Little Line', primaryHref: 'little-line/'. The repo is private, so no repo link.
   },
   {
     id: 'hand', title: 'Hand Tracking', full: 'Hand Tracking for Physiotherapy', kind: 'Undergraduate dissertation',
