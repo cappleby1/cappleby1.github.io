@@ -3,41 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catherine Appleby - Website Splash </title>
-  <link rel="stylesheet" href="CSS/splash_style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  <title>Catherine Appleby – CatOS</title>
+  <meta name="description" content="Catherine Appleby – game and software engineer. Projects, about and contact.">
+  <script>
+    try { if (localStorage.getItem('catos-hc') === '1') document.documentElement.classList.add('hc'); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
+<body>
 
-<body style="background-image: url('Images/background.jpg');">
-  <h1>CatOS</h1>
+  <header class="wrap site-header">
+    <a href="#top" class="btn btn-soft logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/></svg>
+      CatOS
+    </a>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Main">
+        <a href="#shelf" class="btn btn-ghost">Shelf</a>
+        <a href="#about" class="btn btn-ghost">About</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+        <a href="https://github.com/cappleby1" class="btn btn-soft">GitHub</a>
+      </nav>
+      <button type="button" class="toggle" id="hc-toggle" aria-pressed="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+        High contrast
+        <span class="track" aria-hidden="true"><span class="knob"></span></span>
+      </button>
+    </div>
+  </header>
+  <div class="rule" aria-hidden="true"></div>
 
-<div class="splash-container">
-<a href="home.html" class="splash-box-link">
-  <div class="splash-box">
-    <h2>Personal Site</h2>
-    <hr class="dotted-line">
-    <p>Click here for my personal project website.</p>
-  </div>
-</a>
+  <main>
+    <section id="top" class="wrap hero">
+      <div class="hero-badge" aria-hidden="true">
+        <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6-4.5-4.2 6.1-.7z"/></svg>
+      </div>
+      <div class="hero-text">
+        <p class="hero-kicker">Game &amp; software engineer</p>
+        <h1>Hi, I'm Catherine</h1>
+        <p class="hero-sub">Game Engineering MSc · Computer Science BSc, Newcastle University. Pull something off the shelf.</p>
+      </div>
+    </section>
 
-<a href="portfolio.html" class="splash-box-link">
-  <div class="splash-box">
-    <h2>Professional Site</h2>
-    <hr class="dotted-line">
-    <p>Click here for my portfolio.</p>
-    <a href="portfolio.html"></a>
-  </div>
-</a>
-</div>
+    <section id="shelf" class="wrap shelf-section" aria-label="Projects shelf">
+      <p class="label">On the shelf</p>
+      <div class="shelf-scroll">
+        <div class="shelf-row" id="shelf-row">
+          <!-- Book spines are added by script.js -->
+          <div class="spine-empty"><span>Room for the next app</span></div>
+          <div class="decor" aria-hidden="true">
+            <svg width="90" height="110" viewBox="0 0 90 110" fill="none" stroke-linecap="round">
+              <path d="M45 62 C40 40 22 30 10 32" stroke="#6FDCA0" stroke-width="4"/>
+              <path d="M45 62 C50 36 66 24 80 26" stroke="#6FDCA0" stroke-width="4"/>
+              <path d="M45 62 V20" stroke="#6FDCA0" stroke-width="4"/>
+              <ellipse cx="14" cy="32" rx="11" ry="6" fill="#6FDCA0" transform="rotate(-20 14 32)"/>
+              <ellipse cx="76" cy="26" rx="11" ry="6" fill="#6FDCA0" transform="rotate(20 76 26)"/>
+              <ellipse cx="45" cy="18" rx="6" ry="11" fill="#6FDCA0"/>
+              <path d="M24 62 H66 L60 108 H30 Z" fill="#7CC4FF"/>
+              <rect x="20" y="58" width="50" height="11" rx="5" fill="#3F8FCC"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="plank" aria-hidden="true"></div>
 
-<script src="script.js"></script>
+      <article class="card book" id="book" aria-live="polite">
+        <div class="book-media" id="book-media"></div>
+        <div class="book-info">
+          <div class="book-kind">
+            <span class="book-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/></svg>
+            </span>
+            <p class="label" id="book-kind"></p>
+          </div>
+          <h2 id="book-title"></h2>
+          <div class="chips" id="book-tags"></div>
+          <p class="book-desc" id="book-desc"></p>
+          <div class="book-actions">
+            <a class="btn btn-main" id="book-primary" href="#"></a>
+            <button type="button" class="btn btn-main" id="book-soon" disabled hidden>Coming soon</button>
+            <a class="btn btn-soft" id="book-repo" href="#" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </div>
+      </article>
+    </section>
 
-<footer>
-  <a href="https://github.com/cappleby1">
-    <img src="Images\github logo.png" alt="github image" />
-  </a>
-  <p>Made by Catherine Appleby 2026</p>
-</footer>
+    <section class="wrap lower">
+      <div id="about" class="card about">
+        <p class="label" style="margin-bottom: 12px">About me</p>
+        <p>I graduated from the Game Engineering MSc at Newcastle University, after a Computer Science BSc. I love building things end to end, from gameplay and engine work to small tools and apps.</p>
+        <p class="muted">Every app here shares the same cozy theme, so new ones slot straight onto the shelf.</p>
+      </div>
 
+      <form id="contact" class="card contact" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="1c87ad4a-140a-4f37-9f34-31891b38c590">
+        <p class="label">Say hello</p>
+        <div class="field-row">
+          <label class="field">Your name<input type="text" name="name" autocomplete="name" required></label>
+          <label class="field">Your email<input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <label class="field">Message<textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="btn btn-main">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <span>Made by Catherine Appleby, 2026</span>
+    <a href="https://github.com/cappleby1">github.com/cappleby1</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
