@@ -164,4 +164,19 @@ document.addEventListener('DOMContentLoaded', () => {
   $('hc-toggle').addEventListener('click', () => {
     setHighContrast(!document.documentElement.classList.contains('hc'));
   });
+
+  // ---- Settings cog ----
+  const cog = $('settings-btn');
+  const panel = $('settings-panel');
+  const setOpen = (open) => {
+    panel.hidden = !open;
+    cog.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+  cog.addEventListener('click', () => setOpen(panel.hidden));
+  document.addEventListener('click', (e) => {
+    if (!panel.hidden && !e.target.closest('.settings')) setOpen(false);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !panel.hidden) { setOpen(false); cog.focus(); }
+  });
 });

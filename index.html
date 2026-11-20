@@ -26,12 +26,24 @@
         <a href="#about" class="btn btn-ghost">About</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
         <a href="https://github.com/cappleby1" class="btn btn-soft">GitHub</a>
+        <a href="https://ko-fi.com/catappleby" class="btn btn-soft" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h13v7a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5z"/><path d="M16 8h2a3 3 0 0 1 0 6h-2"/><path d="M9.5 14.4l-2.4-2.3a1.5 1.5 0 0 1 2.4-1.9 1.5 1.5 0 0 1 2.4 1.9z" fill="#FF5E5B" stroke="none"/></svg>
+          Support me on Ko-fi
+        </a>
       </nav>
-      <button type="button" class="toggle" id="hc-toggle" aria-pressed="false">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
-        High contrast
-        <span class="track" aria-hidden="true"><span class="knob"></span></span>
-      </button>
+      <div class="settings">
+        <button type="button" class="btn btn-soft cog" id="settings-btn" aria-label="Settings" aria-expanded="false" aria-controls="settings-panel">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </button>
+        <div class="card settings-panel" id="settings-panel" hidden>
+          <p class="label">Settings</p>
+          <button type="button" class="toggle" id="hc-toggle" aria-pressed="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+            High contrast
+            <span class="track" aria-hidden="true"><span class="knob"></span></span>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
   <div class="rule" aria-hidden="true"></div>
@@ -113,7 +125,10 @@
 
   <footer class="wrap site-footer">
     <span>Made by Catherine Appleby, 2026</span>
-    <a href="https://github.com/cappleby1">github.com/cappleby1</a>
+    <span class="footer-links">
+      <a href="https://github.com/cappleby1">github.com/cappleby1</a>
+      <a href="https://ko-fi.com/catappleby" target="_blank" rel="noopener noreferrer">ko-fi.com/catappleby</a>
+    </span>
   </footer>
 
   <script src="script.js"></script>

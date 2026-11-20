@@ -132,6 +132,23 @@ a:hover { color: var(--link-hover); }
 .hc .track { background: #FFD400; border-color: #FFD400; }
 .hc .knob { left: 21px; background: #000000; transition: none; }
 
+/* Smaller buttons in the header */
+.site-header .btn { min-height: 38px; font-size: 15px; padding: 0 16px; gap: 6px; }
+.site-header .btn svg { width: 18px; height: 18px; }
+.site-header .logo { font-size: 18px; padding: 0 18px 0 14px; gap: 10px; }
+
+/* Settings cog */
+.settings { position: relative; }
+.site-header .cog { width: 38px; padding: 0; justify-content: center; }
+.cog[aria-expanded="true"] { background: var(--border); }
+.settings-panel {
+  position: absolute; top: calc(100% + 10px); right: 0; z-index: 10;
+  padding: 16px; display: grid; gap: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  white-space: nowrap;
+}
+.settings-panel[hidden] { display: none; }
+
 /* Hero */
 .hero {
   padding-top: 64px;
@@ -296,6 +313,7 @@ a:hover { color: var(--link-hover); }
   color: var(--label);
   font-size: 15px; font-weight: 700;
 }
+.footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
