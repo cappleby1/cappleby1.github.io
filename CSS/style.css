@@ -146,6 +146,7 @@ a:hover { color: var(--link-hover); }
   padding: 16px; display: grid; gap: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,.35);
   white-space: nowrap;
+  max-width: calc(100vw - 32px);
 }
 .settings-panel[hidden] { display: none; }
 

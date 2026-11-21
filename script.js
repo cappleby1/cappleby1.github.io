@@ -168,10 +168,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---- Settings cog ----
   const cog = $('settings-btn');
   const panel = $('settings-panel');
+  // The panel is right-aligned to the cog. On narrow screens the header wraps and
+  // the cog can sit near the left edge, pushing the panel off-screen, so nudge it
+  // back inside the viewport.
+  const GUTTER = 16;
+  const placePanel = () => {
+    panel.style.right = '';
+    const rect = panel.getBoundingClientRect();
+    const vw = document.documentElement.clientWidth;
+    let shift = 0;
+    if (rect.left < GUTTER) shift = GUTTER - rect.left;
+    else if (rect.right > vw - GUTTER) shift = (vw - GUTTER) - rect.right;
+    if (shift) panel.style.right = `${-shift}px`;
+  };
   const setOpen = (open) => {
     panel.hidden = !open;
     cog.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) placePanel();
   };
+  window.addEventListener('resize', () => { if (!panel.hidden) placePanel(); });
   cog.addEventListener('click', () => setOpen(panel.hidden));
   document.addEventListener('click', (e) => {
     if (!panel.hidden && !e.target.closest('.settings')) setOpen(false);
