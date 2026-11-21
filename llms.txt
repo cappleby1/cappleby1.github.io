@@ -1,0 +1,20 @@
+# Catherine Appleby – CatOS
+
+> Personal portfolio of Catherine Appleby, a game and software engineer. She has a Game Engineering MSc and a Computer Science BSc from Newcastle University and now works as a software developer. She builds things end to end, from gameplay and engine work to small tools and apps.
+
+- Website: https://cappleby.online/
+- GitHub: https://github.com/cappleby1
+- Ko-fi: https://ko-fi.com/catappleby
+- Contact: use the "Say hello" form at https://cappleby.online/#contact
+
+## Projects
+
+- [Little Line](https://cappleby.online/little-line/): A cosy focus timer where every session is a train trip. Pick a destination and the ride lasts about as long as the real train would, while you sit in the carriage with Pip the cat conductor. Earn miles, tickets and souvenirs to do up your engine. Built with FastAPI, SQLite and JavaScript. Currently in a private preview.
+- [Hand Tracking for Physiotherapy](https://github.com/cappleby1/undergraduate_dissertation): Undergraduate dissertation. A webcam-only physiotherapy game: your real hand moves an in-game hand to press buttons, and the game records your times so you can track rehab. Now tracks both hands. Unity, OpenCV, Python. Demo: https://www.youtube.com/watch?v=rWLn_2HwUj0
+- [Cognitive Bias Escape Room](https://github.com/cappleby1/Postgraduate_Dissertation): Postgraduate dissertation. An Unreal Engine escape room designed as a new way to run cognitive research on bias. Buttons don't do what you expect while you race a timer. Includes menus, level restarts and NPC AI. Demo: https://www.youtube.com/watch?v=RGmRGNUNVC8
+- [Godot Platformer](https://github.com/cappleby1/Godot_Game): A small platformer made to learn Godot, with one full level, a timer, coins and a dead zone. Godot, GDScript.
+- [XR Unity App](https://github.com/cappleby1/xr_mobile_app): A mobile XR app. Scan a QR code to spawn a cube and play with it using on-screen buttons. Unity, XR.
+
+## Skills
+
+Unity, Unreal Engine, Godot, GDScript, Python, OpenCV, JavaScript, FastAPI, SQLite, XR.
